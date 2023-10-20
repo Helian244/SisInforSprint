@@ -21,7 +21,7 @@ public class Validacion extends javax.swing.JFrame {
     /**
      * Creates new form Validacion
      */
-    public Validacion() {
+    public Validacion() { 
         this.setLocationRelativeTo(null);
         initComponents();
     }
