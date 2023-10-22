@@ -1,0 +1,24 @@
+-encoding
+'UTF-8'
+-protected
+-source
+'11'
+-sourcepath
+'C:/Users/CARLOS ROJAS/Documents/NetBeansProjects/Registro/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2023. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/CARLOS ROJAS/Documents/NetBeansProjects/Registro/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Registro 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/en/java/javase/11/docs/api' 'C:/Users/CARLOS ROJAS/Documents/NetBeansProjects/Registro/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'Registro 1.0-SNAPSHOT API'
