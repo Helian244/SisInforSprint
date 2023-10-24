@@ -4,17 +4,12 @@
  */
 package Interfaz;
 import Codigo.Conexion;
-import Interfaz.MenuPrincipal;
-import com.mysql.cj.protocol.Resultset;
-import java.sql.CallableStatement;
 import javax.swing.JOptionPane;
 import java.sql.Connection;
 import java.sql.Statement;
-import java.sql.PreparedStatement;
 import Interfaz.MenuPrincipal;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Date;
 import javax.swing.table.DefaultTableModel;
 /**
  *
