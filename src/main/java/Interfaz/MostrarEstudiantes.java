@@ -75,7 +75,6 @@ public class MostrarEstudiantes extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         sal.setText("Salir");
         sal.addActionListener(new java.awt.event.ActionListener() {
@@ -83,7 +82,6 @@ public class MostrarEstudiantes extends javax.swing.JFrame {
                 salActionPerformed(evt);
             }
         });
-        getContentPane().add(sal, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 30, -1, -1));
 
         vist.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -98,15 +96,12 @@ public class MostrarEstudiantes extends javax.swing.JFrame {
         ));
         vista.setViewportView(vist);
 
-        getContentPane().add(vista, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 640, 470));
-
         reg.setText("Menú");
         reg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 regActionPerformed(evt);
             }
         });
-        getContentPane().add(reg, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 90, -1, -1));
 
         mosD.setText("Mostrar Datos");
         mosD.addActionListener(new java.awt.event.ActionListener() {
@@ -114,8 +109,38 @@ public class MostrarEstudiantes extends javax.swing.JFrame {
                 mosDActionPerformed(evt);
             }
         });
-        getContentPane().add(mosD, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 270, -1, -1));
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 524));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(vista, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(mosD)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(sal)
+                            .addComponent(reg)))))
+            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 810, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 524, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(vista, javax.swing.GroupLayout.PREFERRED_SIZE, 470, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(sal)
+                        .addGap(35, 35, 35)
+                        .addComponent(reg)
+                        .addGap(155, 155, 155)
+                        .addComponent(mosD))))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

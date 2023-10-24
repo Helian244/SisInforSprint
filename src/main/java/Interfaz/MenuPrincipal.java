@@ -40,7 +40,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         rEst.setBackground(new java.awt.Color(0, 102, 102));
         rEst.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
@@ -51,7 +50,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 rEstActionPerformed(evt);
             }
         });
-        getContentPane().add(rEst, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 90, 170, -1));
 
         rDoc.setBackground(new java.awt.Color(0, 102, 102));
         rDoc.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
@@ -62,7 +60,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 rDocActionPerformed(evt);
             }
         });
-        getContentPane().add(rDoc, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 170, -1));
 
         rMat.setBackground(new java.awt.Color(0, 102, 102));
         rMat.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
@@ -73,7 +70,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 rMatActionPerformed(evt);
             }
         });
-        getContentPane().add(rMat, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, 170, -1));
 
         mEst.setBackground(new java.awt.Color(0, 102, 102));
         mEst.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
@@ -84,7 +80,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 mEstActionPerformed(evt);
             }
         });
-        getContentPane().add(mEst, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 90, 170, -1));
 
         mDoc.setBackground(new java.awt.Color(0, 102, 102));
         mDoc.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
@@ -95,7 +90,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 mDocActionPerformed(evt);
             }
         });
-        getContentPane().add(mDoc, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 190, 170, -1));
 
         mMat.setBackground(new java.awt.Color(0, 102, 102));
         mMat.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
@@ -106,7 +100,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 mMatActionPerformed(evt);
             }
         });
-        getContentPane().add(mMat, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 290, 170, -1));
 
         ext.setFont(new java.awt.Font("Dubai Medium", 1, 12)); // NOI18N
         ext.setText("Salir");
@@ -115,8 +108,58 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 extActionPerformed(evt);
             }
         });
-        getContentPane().add(ext, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 20, -1, -1));
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 370));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(360, 360, 360)
+                .addComponent(mEst, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(360, 360, 360)
+                .addComponent(mMat, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(110, 110, 110)
+                .addComponent(rDoc, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(110, 110, 110)
+                .addComponent(rMat, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(360, 360, 360)
+                .addComponent(mDoc, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(550, 550, 550)
+                .addComponent(ext))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(110, 110, 110)
+                .addComponent(rEst, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(90, 90, 90)
+                .addComponent(mEst)
+                .addGap(171, 171, 171)
+                .addComponent(mMat))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(190, 190, 190)
+                .addComponent(rDoc))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(290, 290, 290)
+                .addComponent(rMat))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(190, 190, 190)
+                .addComponent(mDoc))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(ext))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(90, 90, 90)
+                .addComponent(rEst))
+            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -164,37 +207,37 @@ public class MenuPrincipal extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new MenuPrincipal().setVisible(true);
-            }
-        });
-    }
+//    public static void main(String args[]) {
+//        /* Set the Nimbus look and feel */
+//        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+//        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+//         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+//         */
+//        try {
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+//        } catch (ClassNotFoundException ex) {
+//            java.util.logging.Logger.getLogger(MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (InstantiationException ex) {
+//            java.util.logging.Logger.getLogger(MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (IllegalAccessException ex) {
+//            java.util.logging.Logger.getLogger(MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+//            java.util.logging.Logger.getLogger(MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        }
+//        //</editor-fold>
+//
+//        /* Create and display the form */
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                new MenuPrincipal().setVisible(true);
+//            }
+//        });
+//    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ext;
