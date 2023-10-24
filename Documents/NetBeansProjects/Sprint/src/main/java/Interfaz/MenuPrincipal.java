@@ -56,6 +56,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         rDoc.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
         rDoc.setForeground(new java.awt.Color(255, 255, 255));
         rDoc.setText("Registrar Docente");
+        rDoc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rDocActionPerformed(evt);
+            }
+        });
         getContentPane().add(rDoc, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 170, -1));
 
         rMat.setBackground(new java.awt.Color(0, 102, 102));
@@ -79,6 +84,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         mDoc.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
         mDoc.setForeground(new java.awt.Color(255, 255, 255));
         mDoc.setText("Mostrar Docentes");
+        mDoc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mDocActionPerformed(evt);
+            }
+        });
         getContentPane().add(mDoc, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 190, 170, -1));
 
         mMat.setBackground(new java.awt.Color(0, 102, 102));
@@ -115,6 +125,18 @@ public class MenuPrincipal extends javax.swing.JFrame {
         r12.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_mEstActionPerformed
+
+    private void rDocActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rDocActionPerformed
+        RegistroDocentes r2 = new RegistroDocentes(this);
+        r2.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_rDocActionPerformed
+
+    private void mDocActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mDocActionPerformed
+        MostrarDocentes r22 = new MostrarDocentes(this);
+        r22.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_mDocActionPerformed
 
     /**
      * @param args the command line arguments
