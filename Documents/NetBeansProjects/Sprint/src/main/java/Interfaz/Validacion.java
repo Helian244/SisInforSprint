@@ -26,7 +26,7 @@ public class Validacion extends javax.swing.JFrame {
         initComponents();
     }
     public int existeParque(String nom, String val){
-       PreparedStatement a = null;
+        PreparedStatement a = null;
         ResultSet b = null;
         String sql = "SELECT count(idParque)FROM Parque where nombre = ? and valor = ?";
         try{
@@ -160,19 +160,19 @@ public class Validacion extends javax.swing.JFrame {
         }else{
             if(this.existeParque(nombrePark,valorPark) == 0){
                 try{
-            CallableStatement c = conectar.prepareCall("{call añadirParque(?,?)}");
-            c.setString(1,nombrePark);
-            c.setInt(2,valorInt);
-            c.execute();
-            c.close();
-            JOptionPane.showMessageDialog(null, "Se añadio con exito el parque");
-        } catch(Exception e){
-            JOptionPane.showMessageDialog(null, "error: " + e.toString());
-        }
+                    CallableStatement c = conectar.prepareCall("{call añadirParque(?,?)}");
+                    c.setString(1,nombrePark);
+                    c.setInt(2,valorInt);
+                    c.execute();
+                    c.close();
+                    JOptionPane.showMessageDialog(null, "Se añadio con exito el parque");
+                } catch(Exception e){
+                    JOptionPane.showMessageDialog(null, "error: " + e.toString());
+                }
             }else{
                 JOptionPane.showMessageDialog(null, "El parque que desea ingresar ya existe");
             }
-        }
+                }
     }//GEN-LAST:event_inActionPerformed
 
     private void valParkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_valParkActionPerformed
